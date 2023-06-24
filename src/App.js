@@ -1,5 +1,9 @@
 import React from 'react';
 import './App.css';
+import tyler from "../src/assets/img/tyler.jpg"
+import etch from "../src/assets/img/etchasketch.png"
+import translation from "../src/assets/img/telegram.png"
+import inspire from "../src/assets/img/inspirenow.jpg"
 
 function Main() {
   const scrollToAboutMe = (event) => {
@@ -20,12 +24,6 @@ function Main() {
     projectSection.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const scrollToExtracurriculars = (event) => {
-    event.preventDefault();
-    const contactSection = document.getElementById('extracurriculars');
-    contactSection.scrollIntoView({ behavior: 'smooth' });
-  }
-
   const scrollToContact = (event) => {
     event.preventDefault();
     const contactSection = document.getElementById('contact');
@@ -42,7 +40,6 @@ function Main() {
           <li><a href="#aboutMe" onClick={scrollToAboutMe}>About Me</a></li>
           <li><a href="#resume" onClick={scrollToResume}>Resume</a></li>
           <li><a href="#projects" onClick={scrollToProjects}>Projects</a></li>
-          <li><a href="#extracurricular" onClick={scrollToExtracurriculars}>Extracurricular</a></li>
           <li><a href="#contact" onClick={scrollToContact}>Contact</a></li>
         </ul>
       </header>
@@ -53,11 +50,11 @@ function Main() {
           Software Engineer | Web Developer | CS @ UCSC
         </h2>
         <div className="imgLinks">
-          <a href="https://github.com/aaronle03"><img src="https://icongr.am/devicon/github-original.svg?size=37&color=000000" alt="GitHub"></img></a>
-          <a href="https://www.linkedin.com/in/aaronctle/"><img src="https://icongr.am/devicon/linkedin-original.svg?size=37&color=000000" alt="LinkedIn"></img></a>
-          <a href="mailto:aaronle5621@gmail.com"><img src="https://icongr.am/clarity/email.svg?size=32&color=currentColor" alt="Email"></img></a>
+          <a href="https://github.com/aaronle03"><img src="https://icongr.am/fontawesome/github.svg?size=32&color=ffffff" alt="GitHub"></img></a>
+          <a href="https://www.linkedin.com/in/aaronctle/"><img src="https://icongr.am/entypo/linkedin.svg?size=32&color=ffffff" alt="LinkedIn"></img></a>
+          <a href="mailto:aaronle5621@gmail.com"><img src="https://icongr.am/entypo/email.svg?size=32&color=ffffff" alt="Email"></img></a>
         </div>
-        <button id="scrollButton" onClick={scrollToAboutMe}><img src="https://icongr.am/entypo/arrow-down.svg?size=45&color=currentColor" alt="Down Arrow"></img></button>
+        <button id="scrollButton" onClick={scrollToAboutMe}><img src="https://icongr.am/entypo/arrow-down.svg?size=45&color=ffffff" alt="Down Arrow"></img></button>
       </div>
 
       <div className="aboutMe" id="aboutMe">
@@ -65,7 +62,7 @@ function Main() {
         <h1>Let me introduce myself 👋</h1>
         <section className="aboutMeBio">
           <span class="profilePicture"></span>
-          <h2>I am an aspiring engineer eagerly exploring diverse opportunities in the ever-evolving tech industry. Currently enrolled in UC Santa Cruz's class of 2025, pursuing a B.A. in Computer Science, my primary interests lie in web development and machine learning.</h2>
+          <h2>I am an aspiring engineer eagerly exploring diverse opportunities in the ever-evolving tech industry. Currently enrolled in UC Santa Cruz's class of 2025, pursuing a B.A. in Computer Science. I'm very interested in Full-Stack Development and my experience in my internship and in building this website have helped me grow my knowledge. In addition, I am drawn to AI and machine learning models.</h2>
         </section>
         <section className="aboutMeTechStack">
           <p>Tech Stack</p>
@@ -175,21 +172,48 @@ function Main() {
       </div>
 
       <div className="projects" id="projects">
-        <p>Projects section</p>
-      </div>
-
-      <div className="extracurriculars" id="extracurriculars">
-        <p>Extracurricular section</p>
+        <h2>Projects</h2>
+        <h1>Check out my creations.</h1>
+        <section className="projectGrid">
+          <a href="https://github.com/aaronle03/landing-page">
+            <p>Mock E-Commerce/Music Site</p>
+            <img src={tyler} alt="Tyler the Creator" width="300" height="300"/>
+          </a>
+          <a href="https://github.com/aaronle03/Etch-A-Sketch">
+            <p>Etch-A-Sketch</p>
+            <img src={etch} alt="greg" width="300" height="300"/>
+          </a>
+          <a href="https://github.com/aaronle03/Telegram-Translation-Bot">
+            <p>Telegram Translation Bot</p>
+            <img src={translation} alt="greg" width="300" height="300"/>
+          </a>
+          <a href="https://github.com/aaronle03/InspireNow">
+            <p>InspireNow</p>
+            <img src={inspire} alt="Personal Website" width="300" height="300"/>
+          </a>
+        </section>
       </div>
 
       <div className="contact" id="contact">
-        <p>Contact section</p>
+        <section className="contactHeader">
+          <h3>Contact</h3>
+          <h1>I'd Love To Connect With You.</h1>
+          <h2>Let me get to know more about you.</h2>
+        </section>
+        <section className="contactInfo">
+          <div className="contactEmail">
+            <h2>Email Me At</h2>
+            <a href="mailto:aaronle5621@gmail.com"><h3>aaronle5621@gmail.com</h3></a>
+          </div>
+          <div className="contactEmail">
+            <h2>Let's Connect</h2>
+            <a href="https://www.linkedin.com/in/aaronctle/"><h3>LinkedIn Profile</h3></a>
+          </div>
+        </section>
       </div>
 
       <footer className="footer">
-        <p>
-          footer area
-        </p>
+        Edit By Aaron Le - © Copyright 2023 - Design by Aaron Le
       </footer>
     </div>
   );

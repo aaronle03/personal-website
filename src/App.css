@@ -19,19 +19,19 @@
   text-align: center;
   display: block;
   color:#EEEEEE;
-  font-size: 20px;
+  font-size: 25px;
   padding-left: 20px;
   padding-right: 20px;
   transition: transform .2s ease;
 }
 
 .header li a:hover {
-  color: #BD613C;
   transform: scale(1.3);
+  text-decoration: underline;
 }
 
 .homePage {
-  background-image: url("C:\Users\kunai\OneDrive\Desktop\summer-2023\personal-website\wall2.png");
+  background-image: url("C:\Users\kunai\OneDrive\Desktop\summer-2023\personal-website\src\assets\img\wall2.png");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -58,7 +58,8 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
-  transition: transform 0.5s ease;
+  transition: transform 0.2s ease;
+  margin-bottom: 200px;
 }
 
 .imgLinks a:hover {
@@ -66,11 +67,12 @@
 }
 
 #scrollButton {
-  margin-top:100px;
+  position: absolute;
+  top: 1100px;
   background-color: transparent;
   border:none;
   outline:none;
-  transition: transform 0.5s ease;
+  transition: transform 0.2s ease;
 }
 
 #scrollButton:hover {
@@ -102,7 +104,7 @@
 .aboutMeBio {
   display: flex;
   gap: 40px;
-  margin-bottom: 200px;
+  margin-bottom: 80px;
 }
 
 .aboutMeBio h2 {
@@ -117,8 +119,9 @@
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  background-image: url("C:\Users\kunai\OneDrive\Desktop\summer-2023\personal-website\aaron.jpg");
+  background-image: url("C:\Users\kunai\OneDrive\Desktop\summer-2023\personal-website\src\assets\img\aaron.jpg");
   background-position: center;
+  margin-top: 50px;
 }
 
 .aboutMeTechStack {
@@ -295,8 +298,37 @@
   color: #EEEEEE;
 }
 
-.extracurriculars {
-  background-color: #222831;
+.projects h2 {
+  color: #BD613C;
+  letter-spacing: 5px;
+  font-size: 30px;
+  margin: 0px;
+}
+
+.projects h1 {
+  margin: 0px;
+  margin-bottom: 200px;
+}
+
+.projectGrid {
+  display:flex;
+  gap: 100px;
+}
+
+.projectGrid a {
+  transition: transform 0.5s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.projectGrid a:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  background-blend-mode: multiply;
+}
+
+.contact {
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -306,18 +338,55 @@
   color: #EEEEEE;
 }
 
-.contact {
-  background-color: #222831;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #EEEEEE;
+.contactHeader h3 {
+  color:#BD613C;
+  margin:0px;
+}
+
+.contactHeader h1 {
+  margin:0px;
+  color:black;
+}
+
+.contactHeader h2 {
+  margin: 0px;
+  margin-bottom: 100px;
+  font-size: 20px;
+  color:grey;
+}
+
+.contactInfo {
+  display:flex;
+  gap: 100px;
+}
+
+.contactEmail h2 {
+  font-size: 40px;
+  margin: 0px;
+  color:black;
+}
+
+.contactEmail h3 {
+  font-size: 30px;
+  margin:0px;
+}
+
+.contactEmail a {
+  text-decoration: none;
+  color:grey;
+}
+
+.contactEmail a:hover {
+  color:#BD613C;
 }
 
 .footer {
   background-color: #222831;
   height: 100px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
 }
