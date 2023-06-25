@@ -2,13 +2,9 @@
 This is a personal website built using React, a JavaScript library for building user interfaces. It serves as a platform to showcase information about yourself, your projects, and any other content you wish to share with your visitors.
 
 ## Features
-- Responsive Design: The website is designed to be responsive and can adapt to different screen sizes, ensuring a seamless experience across devices.
-- Interactive Components: Leveraging React's component-based architecture, the website incorporates interactive components such as sliders, forms, modals, and more to enhance user engagement.
-- Project Showcase: You can showcase your projects by including detailed descriptions, images, and links to their respective repositories or live demos.
 - About Me: The website includes a dedicated section where you can introduce yourself, highlight your skills, and provide a brief summary of your background and achievements.
+- Project Showcase: You can showcase your projects by including detailed descriptions, images, and links to their respective repositories or live demos.
 - Contact Form: A contact form is provided to allow visitors to get in touch with you directly. This form can be configured to send messages to your preferred email address.
-- Social Media Integration: Links to your social media profiles can be added, enabling visitors to connect with you on various platforms.
-- Customizable: The website is highly customizable. You can easily modify the content, styling, and layout to align with your personal preferences.
 
 ## Installation
 To run the website locally on your machine, follow these steps:
