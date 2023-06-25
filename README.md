@@ -18,7 +18,7 @@ To run the website locally on your machine, follow these steps:
 - After the installation is complete, start the development server:
 - Copy code
 ```npm start```
-Open your web browser and visit http://localhost:3000 to view the website.
+- Open your web browser and visit http://localhost:3000 to view the website.
 
 ## Credits
 This website is built using React (https://reactjs.org/).
